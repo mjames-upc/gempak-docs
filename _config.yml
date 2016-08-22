@@ -1,7 +1,7 @@
-project_name: 'Polymer Docs'
-github_user: mjames-upc
-github_project: polymer-docs
-baseurl: /polymer-docs
+project_name: 'GEMPAK User Manual'
+github_user: Unidata
+github_project: gempak
+baseurl: /gempak
 
 markdown: kramdown
 highlighter: true

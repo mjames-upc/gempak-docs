@@ -1,0 +1,7 @@
+GDFILE  $GEMPAK/data/hrcbob.grd                                                                                                         
+LSTALL  YES                                                                                                                             
+OUTPUT  T                                                                                                                               
+GDATTIM first                                                                                                                           
+GLEVEL  500                                                                                                                             
+GVCORD  PRES                                                                                                                            
+GFUNC   all                                                                                                                             

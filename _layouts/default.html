@@ -9,7 +9,7 @@
   <app-drawer id="sidebar" unresolved>
     <div layout vertical id="sidebar-content">
       <div id="logo-container" layout horizontal center>
-        <a href="{{ site.baseurl }}/" class="logo"><img src="{{ site.baseurl }}/images/logo.svg" alt="{{ site.project_name }}"></a>
+        <a href="{{ site.baseurl }}/" class="logo"><img src="{{ site.baseurl }}/images/logo.png" alt="{{ site.project_name }}"></a>
       </div>
 
       <docs-menu unresolved flex
@@ -21,7 +21,13 @@
 
   <scroll-area sidebar unresolved class="scrolling">
     <site-banner type="{{page.type}}" shortname="{{page.shortname}}" unresolved>
-      {% include top-nav.html %}
+      {% capture theme %}
+      {% if page.layout == 'home' %}
+      dark
+      {% else %}
+      dark
+      {% endif %}
+      {% endcapture %}
       <header class="shrink">
         <h1>
         {{ site.project_name }} : {{page.title}}
